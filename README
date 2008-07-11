@@ -1,0 +1,15 @@
+Validations
+===========
+
+Extraction of email validation from the restful_authentication plugin
+
+It checks for presence, length, format and uniqueness. There is no guarantee that a validated email is real and deliverable.
+
+Example
+=======
+
+class User < ActiveRecord::Base
+  validates_email :email
+end
+
+Copyright (c) 2008 Daniel Haran, released under the MIT license
